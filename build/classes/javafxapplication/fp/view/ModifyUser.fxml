@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.fp.controller.ModifyUserController">
+    <children>
+        <VBox prefHeight="500.0" prefWidth="800.0" spacing="10.0" styleClass="background-admin" stylesheets="@../stylesheet/stylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="TOP_CENTER" prefHeight="72.0" prefWidth="800.0">
+                    <children>
+                        <Label text="Modify User Details" translateX="40.0" translateY="1.0">
+                            <font>
+                                <Font name="Arial Bold" size="30.0" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.7666666666666667" startX="0.2857142857142857">
+                           <stops>
+                              <Stop color="RED" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        
+                    </children>
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </HBox>
+            <HBox prefHeight="40.0" prefWidth="800.0">
+               <children>
+                        <Label fx:id="errorMsg" text="" translateX="333.0">
+                            <font>
+                                <Font name="Arial" size="15.0" />
+                            </font>
+                        </Label>
+               </children>
+            </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="139.0" text="User ID   ">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x21" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.7666666666666667" startX="0.2857142857142857">
+                           <stops>
+                              <Stop color="RED" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="UserID_id" fx:id="UserID_txt" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Label prefHeight="30.0" text="First Name      ">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x1" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.7666666666666667" startX="0.2857142857142857">
+                           <stops>
+                              <Stop color="RED" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="FName_id" fx:id="FName_txt" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Label prefHeight="30.0" text="Last Name       ">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x2" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.7666666666666667" startX="0.2857142857142857">
+                           <stops>
+                              <Stop color="RED" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="LName_id" fx:id="LName_txt" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateX="-22.0">
+          <children>
+            <Label prefHeight="30.0" prefWidth="192.0" text="    Department      ">
+              <font>
+                <Font name="Arial Bold" size="20.0" fx:id="x3" />
+              </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.7666666666666667" startX="0.2857142857142857">
+                           <stops>
+                              <Stop color="RED" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+            </Label>
+                  <ComboBox fx:id="department_choice" onAction="#onComboChoice" prefWidth="150.0">
+                       <items>
+                        <FXCollections fx:factory="observableArrayList">
+                         <String fx:value="Billing" />
+                         <String fx:value="Marketing" />
+                         <String fx:value="Research" />
+                         </FXCollections>
+                         </items>
+                  </ComboBox>
+          </children>
+        </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="27.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#modifyUserProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Update User">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#cancelProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Cancel">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.fp.controller.DeleteCustomerController">
+    <children>
+        <VBox prefHeight="500.0" prefWidth="800.0" spacing="10.0" styleClass="background_user_options" stylesheets="@../stylesheet/stylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="TOP_CENTER" prefHeight="72.0" prefWidth="800.0">
+                    <children>
+                        <Label text="Delete a Customer" translateX="46.0" translateY="1.0">
+                            <font>
+                                <Font name="Arial Bold" size="31.0" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.27142857142857146" startX="1.0" startY="0.7857142857142857">
+                           <stops>
+                              <Stop color="#f7ff0e" />
+                              <Stop color="#00ff51" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Label fx:id="errorMsg" text="">
+                            <font>
+                                <Font name="Arial" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Label prefHeight="30.0" text="Customer ID  ">
+                            <font>
+                                <Font name="Arial Bold" size="21.0" fx:id="x1" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.27142857142857146" startX="1.0" startY="0.7857142857142857">
+                           <stops>
+                              <Stop color="#f7ff0e" />
+                              <Stop color="#00ff51" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="CustomerID_id" fx:id="CustomerID_txt" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="22.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#DeleteCustomerProcess" prefHeight="30.0" prefWidth="129.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Delete Customer">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#cancelProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Cancel">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="-1.0" prefWidth="-1.0" />
+    </children>
+</AnchorPane>

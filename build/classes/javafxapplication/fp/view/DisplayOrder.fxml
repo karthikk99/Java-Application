@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.fp.controller.DisplayOrderController">
+    <children>
+        <VBox layoutX="-6.0" prefHeight="500.0" prefWidth="800.0" spacing="10.0" styleClass="background_user_options" stylesheets="@../stylesheet/stylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="TOP_CENTER" prefHeight="72.0" prefWidth="800.0">
+                    <children>
+                        <Label text="Display Order Details" translateX="46.0" translateY="1.0">
+                            <font>
+                                <Font name="Arial Bold" size="30.0" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="0.9571428571428571" endY="0.40952380952380957" startY="1.0">
+                           <stops>
+                              <Stop color="#00ff09" />
+                              <Stop color="#fbff11" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Label fx:id="errorMsg" text="">
+                            <font>
+                                <Font name="Arial" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Label prefHeight="30.0" text="Order ID   ">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x1" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="0.9571428571428571" endY="0.40952380952380957" startY="1.0">
+                           <stops>
+                              <Stop color="#00ff09" />
+                              <Stop color="#fbff11" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="OrderID_id" fx:id="OrderID_txt" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="22.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#displayOrderProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Display Order">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#cancelProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Cancel">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            <HBox prefHeight="200.0" prefWidth="200.0" translateX="1.0" translateY="70.0">
+               <children>
+                  <TableView fx:id="example_tableview" prefHeight="100.0" prefWidth="765.0" styleClass="tableview" stylesheets="@../stylesheet/stylesheet.css" translateX="22.0">
+                    <columns>
+                      <TableColumn fx:id="name_tablecolumn" editable="false" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="email_tablecolumn" editable="false" prefWidth="125.0" text="ItemNo" />
+                        <TableColumn fx:id="address_tablecolumn" prefWidth="129.0" text="CustomerID" />
+                        <TableColumn fx:id="department_tablecolumn" prefWidth="82.0" text="Date" />
+                        <TableColumn fx:id="productID_tablecolumn" prefWidth="125.0" text="ProductID" />
+                        <TableColumn fx:id="price_tablecolumn" prefWidth="90.0" text="Price" />
+                        <TableColumn fx:id="quantity_tablecolumn" prefWidth="138.0" text="Quantity" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="-1.0" prefWidth="-1.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.fp.controller.UserMenuController">
+    <children>
+        <VBox prefHeight="500.0" prefWidth="800.0" spacing="10.0" styleClass="background-user" stylesheets="@../stylesheet/stylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="TOP_CENTER">
+                    <children>
+                        <Label prefHeight="56.0" prefWidth="154.0" text="User Menu" translateX="50.0">
+                            <font>
+                                <Font name="Arial Bold" size="30.0" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="0.8952380952380952" endY="0.20952380952380956" startX="0.9047619047619048">
+                           <stops>
+                              <Stop color="#a44e4e" />
+                              <Stop color="#ffc300" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#LogoutProcess" prefHeight="25.0" prefWidth="76.0" text="Logout" styleClass="round-red" stylesheets="@../stylesheet/stylesheet.css" translateX="262.0" translateY="32.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Button>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#BillProductProcess" prefHeight="30.0" prefWidth="192.0" styleClass="button1" stylesheets="@../stylesheet/stylesheet.css" text="Create Order">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#DisplayOrderProcess" prefHeight="30.0" prefWidth="193.0" styleClass="button1" stylesheets="@../stylesheet/stylesheet.css" text="Display Order">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#deleteOrderProcess" prefHeight="30.0" prefWidth="195.0" styleClass="button1" stylesheets="@../stylesheet/stylesheet.css" text="Delete Order">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#ModifyCustomerProcess" prefHeight="30.0" prefWidth="193.0" styleClass="button1" stylesheets="@../stylesheet/stylesheet.css" text="Modify Customer">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#DeleteCustomerProcess" prefHeight="30.0" prefWidth="194.0" styleClass="button1" stylesheets="@../stylesheet/stylesheet.css" text="Delete Customer">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#ProductListProcess" prefHeight="30.0" prefWidth="191.0" styleClass="button1" stylesheets="@../stylesheet/stylesheet.css" text="Product List">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#CustomerListProcess" prefHeight="30.0" prefWidth="190.0" styleClass="button1" stylesheets="@../stylesheet/stylesheet.css" text="Customer List">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

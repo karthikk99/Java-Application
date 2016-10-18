@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.fp.controller.SummaryController">
+  <children>
+    <VBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: azure;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label fx:id="success_lbl" text="" textFill="BLACK">
+          <font>
+            <Font name="Arial Bold" size="20.0" />
+          </font>
+        </Label>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#DoneProcess" prefHeight="29.0" prefWidth="74.0" styleClass="green" stylesheets="@../stylesheet/stylesheet.css" text="Done" translateY="55.0" />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

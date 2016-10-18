@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.fp.controller.SummaryController">
+  <children>
+    <VBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" styleClass="background_user_options" stylesheets="@../stylesheet/stylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+            <ImageView fitHeight="99.0" fitWidth="333.0" pickOnBounds="true" preserveRatio="true" translateX="11.0" translateY="-88.0">
+               <image>
+                  <Image url="@../image/Thank_You.jpg" />
+               </image>
+            </ImageView>
+        <Label fx:id="success_lbl" text="">
+          <font>
+            <Font name="Arial Bold" size="30.0" />
+          </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.9095238095238095">
+                     <stops>
+                        <Stop color="#05ff93" />
+                        <Stop color="#d1f80a" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+        </Label>
+            <Button mnemonicParsing="false" onAction="#DoneProcess" prefHeight="26.0" prefWidth="75.0" styleClass="green" stylesheets="@../stylesheet/stylesheet.css" text="Done" translateY="88.0" />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

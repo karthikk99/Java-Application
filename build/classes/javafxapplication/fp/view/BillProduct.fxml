@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.fp.controller.BillProductController">
+    <children>
+        <VBox prefHeight="500.0" prefWidth="800.0" spacing="10.0" styleClass="background_user_options" stylesheets="@../stylesheet/stylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="800.0">
+                    <children>
+                        <Label prefHeight="36.0" prefWidth="151.0" text="Bill Order" translateX="22.0" translateY="-16.0">
+                            <font>
+                                <Font name="Arial Bold" size="31.0" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </HBox>
+                <Label fx:id="errorMsg" text="" textAlignment="CENTER" translateX="290.0" translateY="-22.0">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </Label>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="-22.0">
+                    <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateX="-12.0">
+                            <children>
+                                <Label prefHeight="30.0" text="Customer Name  ">
+                                    <font>
+                                        <Font name="Arial Bold" size="20.0" fx:id="x11" />
+                                    </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                                 <stops>
+                                    <Stop color="#0fff18" />
+                                    <Stop color="#c9f80b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                                </Label>
+                                <TextField id="CustomerName_id" fx:id="CName_txt" prefHeight="30.0" prefWidth="200.0" />
+                            </children>
+                        </HBox>
+                        <Label prefHeight="30.0" text="Customer Address ">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x12" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="CustomerAddress_id" fx:id="CAddress_txt" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="-25.0">
+                    <children>
+                        <Label prefHeight="30.0" text="Customer ContactNo " translateX="-87.0" translateY="1.0">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x13" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="CContact_id" fx:id="CCNo_txt" prefHeight="30.0" prefWidth="200.0" translateX="-85.0" />
+                        <Label prefHeight="30.0" text="Customer Age" translateX="-60.0">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x131" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="CAge_id" fx:id="CAge_txt" prefHeight="30.0" prefWidth="60.0" translateX="-45.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="800.0">
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="-20.0">
+                    <children>
+                        <Label prefHeight="30.0" text="Order ID  ">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x1" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="Order_id" fx:id="Order_txt" editable="false" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="-25.0">
+                    <children>
+                        <Label prefHeight="30.0" text="Item No.  ">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x2" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="Item_no" fx:id="ItemNo_txt" editable="false" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="-29.0">
+                    <children>
+                        <Label fx:id="onClickProducts" prefHeight="30.0" text="Product ID " translateX="52.0">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x3" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="Product_id" fx:id="ProductID_txt" onKeyReleased="#fetchProductDetails" prefHeight="30.0" prefWidth="200.0" translateX="56.0" />
+                  <Hyperlink onAction="#onClickProducts" text="Available Products" translateX="66.0">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#00ff59" />
+                              <Stop color="#e1ff00" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Hyperlink>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="-34.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="149.0" text="Product Type" translateY="4.0">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" fx:id="x14" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <TextField fx:id="PType_txt" editable="false" prefHeight="32.0" prefWidth="149.0" />
+               </children>
+            </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="-38.0">
+                    <children>
+                        <Label prefHeight="30.0" text="Quantity   ">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x31" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="Quantity_id" fx:id="Quantity_txt" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="-41.0">
+                    <children>
+                        <Label prefHeight="30.0" text="Product Price">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x4" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="Product_Price" fx:id="ProductPrice_txt" editable="false" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+            <HBox alignment="TOP_CENTER" translateY="-43.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="158.0" text="    Order Date">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" fx:id="x41" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.6" startX="1.0" startY="0.5047619047619047">
+                           <stops>
+                              <Stop color="#0fff18" />
+                              <Stop color="#c9f80b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <DatePicker id="date" fx:id="OrderDate_txt" onAction="#OnDate" prefHeight="0.0" prefWidth="174.0" />
+               </children>
+            </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="-30.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#NextItemProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Next Item">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#cancelProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Cancel">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#saveProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Save">
+                            <HBox.margin>
+                                <Insets left="22.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#completeProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Bill">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

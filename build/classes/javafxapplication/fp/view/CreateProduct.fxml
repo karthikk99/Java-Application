@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.fp.controller.CreateProductController">
+    <children>
+        <VBox prefHeight="500.0" prefWidth="800.0" spacing="10.0" styleClass="background-admin" stylesheets="@../stylesheet/stylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="TOP_CENTER" prefHeight="72.0" prefWidth="800.0">
+                    <children>
+                        <Label text="Create a new product" translateX="46.0" translateY="1.0">
+                            <font>
+                                <Font name="Arial Bold" size="30.0" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.7761904761904761" startX="1.0" startY="0.09523809523809518">
+                           <stops>
+                              <Stop color="#e84f0e" />
+                              <Stop color="#f8f8f8" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Label fx:id="errorMsg" text="">
+                            <font>
+                                <Font name="Arial" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Label prefHeight="30.0" text="Product Name ">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x1" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.7761904761904761" startX="1.0" startY="0.09523809523809518">
+                           <stops>
+                              <Stop color="#e84f0e" />
+                              <Stop color="#f8f8f8" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="ProductName_id" fx:id="ProductName_txt" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <HBox prefHeight="29.0" prefWidth="800.0">
+                            <children>
+                            <fx:define>
+                                <ToggleGroup fx:id="myToggleGroup"/>
+                            </fx:define>
+                                <RadioButton fx:id="Alcoholic" mnemonicParsing="false" onAction="#setAlcohol" text="Alcoholic" toggleGroup="$myToggleGroup" translateX="390.0" translateY="4.0" underline="true">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="0.7761904761904761" startX="1.0" startY="0.09523809523809518">
+                                 <stops>
+                                    <Stop color="#e84f0e" />
+                                    <Stop color="#f8f8f8" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill></RadioButton>
+                                <RadioButton fx:id="NonAlcohol" mnemonicParsing="false" onAction="#setNonAlcohol" text="Non - Alcoholic" toggleGroup="$myToggleGroup" translateX="400.0" translateY="4.0" underline="true">
+                                    <HBox.margin>
+                                        <Insets left="22.0" />
+                                    </HBox.margin>
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="radio" />
+                                    </toggleGroup>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="0.7761904761904761" startX="1.0" startY="0.09523809523809518">
+                                 <stops>
+                                    <Stop color="#e84f0e" />
+                                    <Stop color="#f8f8f8" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                                </RadioButton>
+                                <Label prefHeight="30.0" prefWidth="191.0" text="Product Type         " translateX="38.0">
+                                    <font>
+                                        <Font name="Arial Bold" size="20.0" fx:id="x2" />
+                                    </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="0.7761904761904761" startX="1.0" startY="0.09523809523809518">
+                                 <stops>
+                                    <Stop color="#e84f0e" />
+                                    <Stop color="#f8f8f8" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Label prefHeight="30.0" text="Product Price ">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" fx:id="x3" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.7761904761904761" startX="1.0" startY="0.09523809523809518">
+                           <stops>
+                              <Stop color="#e84f0e" />
+                              <Stop color="#f8f8f8" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <TextField id="ProductPrice_id" fx:id="ProductPrice_txt" prefHeight="30.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" translateY="22.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#createProductProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Create Product">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#cancelProcess" prefHeight="30.0" prefWidth="100.0" styleClass="bevel-grey" stylesheets="@../stylesheet/stylesheet.css" text="Cancel">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.fp.controller.AdminMenuController">
+    <children>
+        <VBox prefHeight="500.0" prefWidth="800.0" spacing="10.0" styleClass="background-admin" stylesheets="@../stylesheet/stylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="TOP_CENTER" prefHeight="72.0" prefWidth="800.0">
+                    <children>
+                        <Label prefHeight="64.0" prefWidth="184.0" text="Admin Menu" translateX="46.0">
+                            <font>
+                                <Font name="Arial Bold" size="30.0" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="0.9190476190476191" endY="0.7428571428571429" startX="0.9047619047619048" startY="0.11904761904761904">
+                           <stops>
+                              <Stop color="#f5c000" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                  <Button mnemonicParsing="false" onAction="#LogoutProcess" prefHeight="32.0" prefWidth="85.0" styleClass="round-red" stylesheets="@../stylesheet/stylesheet.css" text="Logout" translateX="255.0" translateY="32.0" />
+                    </children>
+                    <padding>
+                        <Insets bottom="7.0" />
+                    </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#createNewProductProcess" prefHeight="33.0" prefWidth="234.0" styleClass="font-button" stylesheets="@../stylesheet/stylesheet.css" text="Create Product">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="7.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#createUserProcess" prefHeight="33.0" prefWidth="235.0" styleClass="font-button" stylesheets="@../stylesheet/stylesheet.css" text="Create User">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="7.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#modifyProductProcess" prefHeight="30.0" prefWidth="237.0" styleClass="font-button" stylesheets="@../stylesheet/stylesheet.css" text="Modify Product">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="7.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#DeleteUserProcess" prefHeight="30.0" prefWidth="240.0" styleClass="font-button" stylesheets="@../stylesheet/stylesheet.css" text="Delete User">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="7.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#modifyUserProcess" prefHeight="30.0" prefWidth="238.0" styleClass="font-button" stylesheets="@../stylesheet/stylesheet.css" text="Modify User">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="7.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#deleteProductProcess" prefHeight="30.0" prefWidth="237.0" styleClass="font-button" stylesheets="@../stylesheet/stylesheet.css" text="Delete Product">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="7.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#UserListProcess" prefHeight="30.0" prefWidth="236.0" styleClass="font-button" stylesheets="@../stylesheet/stylesheet.css" text="User List">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="7.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#ProductListProcess" prefHeight="30.0" prefWidth="235.0" styleClass="font-button" stylesheets="@../stylesheet/stylesheet.css" text="Product List">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="7.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
